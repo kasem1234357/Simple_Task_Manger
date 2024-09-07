@@ -56,7 +56,6 @@ function Task() {
     }
   };
   const saveTask = async () => {
-    console.log("done");
     const progressRatio = cacheData.progress / tasks.length;
     const state =
       progressRatio === 1
@@ -68,7 +67,6 @@ function Task() {
     try {
       if (type === "New") {
         const response = await axiosConfig.post(`/api/tasks/`, cacheData);
-        console.log("test");
         setCacheData(response.data.data);
         setType("update");
       } else {
