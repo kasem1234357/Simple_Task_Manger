@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import Feed from './components/layout/Feed/Feed'
 import Navbar from './components/layout/Navbar/Navbar'
 import { Box } from '@chakra-ui/react'

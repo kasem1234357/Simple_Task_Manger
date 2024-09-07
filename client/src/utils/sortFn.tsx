@@ -1,4 +1,5 @@
-import { TaskProp } from "../configs/CONSTANTS";
+import { TaskProp } from "../types/types";
+
 
 export const sortFn = (a: TaskProp, b: TaskProp,sortMethod:any): number => {
     if (sortMethod) {

@@ -6,49 +6,5 @@
  max-height: 100vh;
  overflow: auto;
  grid-template-rows: auto 1fr;
-}.feed__text{
- color:var(--text__title);
- font-weight: 300;
 }
-.feed__text h2{
- padding: 10px 0 10px 0;
- font-weight: inherit;
-}
-.feed__text span{
- color: var(--primary__text);
-}
-.feed__content{
- /* background: var(--secondary); */
- width: 100%;
- /* display: grid;
- grid-template-rows: 2fr 0.75fr 2fr 3fr; */
- display: flex;
- flex-direction: column;
- gap: 1em;
- 
- --gap:1rem;
- margin-top: 20px;
-}
-.feed__content__Box1,.feed__content__Box3{
- min-height: 250px;
-}
-.bar--chart1{
- flex: 1.75;
- min-width: 320px;
-}
-.radear--chart1{
- flex: 1;
- min-width: 320px;
-}
-.feed__content__Box2{
-  min-height: 100px;
-}
-.analystic--box{
- flex: 1;
-}
-.line--chart3{
- flex: 2.5;
-}
-.circuler--chart3{
- flex: 1;
-}
+

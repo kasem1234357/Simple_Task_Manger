@@ -60,17 +60,6 @@ display: flex;
 .view--settings{
  margin-bottom: 10px;
 }
-
-.colored--btn{
- border-radius: 25px;
-
-background: -webkit-linear-gradient(to right,  #0000fa, #7d00fa); 
-background: linear-gradient(to right, #2472fc, #7d00fa); 
-
-
- color: #d7d7d7;
-}
-
 .task__mainBox__Board{
  --gap:1rem;
  width:100%;
@@ -97,9 +86,7 @@ background: linear-gradient(to right, #2472fc, #7d00fa);
  overflow: auto;
  display: flex;
  flex-direction: column;
- /* box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1); */
  backdrop-filter: blur(15px);
- 
 }
 .boardBox__header{
  justify-content: space-between;
@@ -121,8 +108,6 @@ background: linear-gradient(to right, #2472fc, #7d00fa);
 }
 .boardBox__main {
     display: grid;
-    /* grid-template-rows: auto auto; */
-    /* height: 100%; */
     row-gap: 0.8rem;
     padding-bottom: 40px;
 }
@@ -135,91 +120,6 @@ background: linear-gradient(to right, #2472fc, #7d00fa);
  min-height: 140px;
  color: #7a8195;
  place-items: center;
-}
-
- .input--box{
-left: 40px;
-width: min-content;
- }
-
-
-
-.add--task{
-    color: #7a8195;
-}
-
-
-
-
-.task--save--btn{
-    padding: 10px 15px;
-    color:#fff;
-    background: #7d00fa;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 10px;
-}
-div.task--save--btn.tag-btn {
-
-    margin-bottom: 10px;
-    background: #3f51b5;
-    display: inline-block;
-    padding: 5px;
-    position: relative;
-}
-div.task--save--btn.tag-btn span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.tagBox{
-    position: absolute;
-    left: 105px;
-    box-shadow: 4px 4px 16px rgba(0,0,0,0.5);
-    background: #37405a;
-    align-items: center;
-    padding: 0 5px;
-}
-.tag--box{
-    border-radius: 4px;
-    padding: 5px;
-    color:#fff;
-    font-size: 14px;
-    font-weight: bold;
-}
-.task--save--btn.tag-btn.active::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    width: 20px;
-    height: 20px;
-    background: #37405a;
-    right: -26px;
-    transform: rotate(45deg);
-}
-input.tagBox__input {
-    position: relative;
-    width: 120px;
-    left: 5px;
-    z-index: 10000;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    padding: 10px;
-}
-.tag--circle--color--main{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.tag--circle--color{
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
 }
 .board-view {
     display: grid;

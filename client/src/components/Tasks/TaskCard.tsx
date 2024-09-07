@@ -1,7 +1,5 @@
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Drag } from "../icons/SvgIcons";
-import axiosConfig from "../../configs/axiosConfig";
 import { Badge, Box, Flex, Text } from "@chakra-ui/react";
 
 // Define the types for TaskCard props
