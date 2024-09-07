@@ -192,6 +192,7 @@ function Tasks() {
                   padding={"10px 15px 10px 15px"}
                   position={"relative"}
                   ref={filterBoxRef}
+                  cursor={'pointer'}
                 >
                   {filterModel && (
                     <FilterBox
@@ -210,6 +211,7 @@ function Tasks() {
                 </ListItem>
                 <ListItem
                   display={"flex"}
+                  cursor={'pointer'}
                   padding={"10px 15px 10px 15px"}
                   position={"relative"}
                   ref={sortBoxRef}

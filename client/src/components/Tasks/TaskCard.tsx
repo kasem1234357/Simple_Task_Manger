@@ -48,6 +48,7 @@ function TaskCard(props: TaskCardProps) {
       borderRadius="6px"
       color="#d7d7d7"
       p="10px"
+      position={'relative'}
       cursor="pointer"
       draggable="true"
       onDragStart={(e) => {

@@ -64,6 +64,7 @@ body{
  translate: -38%;
  padding: 10px;
  border-radius: 8px;
+ 
 
  box-shadow: 0px 0px 30px rgb(0 0 0 / 50%);
  background: var(--popup__box__bg);
