@@ -18,14 +18,13 @@ import {
   Box,
   Flex,
   Grid,
-  HStack,
+  
   List,
   ListItem,
-  Stack,
 } from "@chakra-ui/react";
 import { sortFn } from "../utils/sortFn";
-import { TaskProp } from "../configs/CONSTANTS";
 import useOutsideClick from "../hooks/useOutsideClick";
+import { TaskProp } from "../types/types";
 
 const currentDate = new Date().toLocaleDateString("en-US", {
   year: "numeric",
