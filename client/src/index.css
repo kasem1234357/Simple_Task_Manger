@@ -26,26 +26,11 @@ body{
     min-height: 100vh;
     
    }
-.primary--bg{
- background: var(--primary);
-}
-.secondary--bg{
- background: var(--secondary);
-}
-.primary--dark--text{
- color: var(--primary__text);
-}
 /*--------------------NavBar--------------*/
 .flex{
  display: flex;
  gap: var(--gap,1rem);
 } 
-.f-colump {
-    flex-direction: column;
-}
-.wrap{
- flex-wrap: wrap;
-}
 .App{
  --gap:0;
  overflow: hidden;

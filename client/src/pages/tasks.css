@@ -1,152 +1,112 @@
-.Task{
- width: 100%;
- padding: 20px 30px 10px ;
- min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+.Task {
+  width: 100%;
+  padding: 20px 30px 10px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-.task__navbar{
- width: 100%;
- padding-bottom: 30px;
- justify-content: space-between;
- align-items: center;
- color: var(--text__title);
- 
+ul li.active {
+  color: var(--text__title);
+  position: relative;
 }
-.task__mainBox{
- display: grid;
- grid-template-rows: auto 1fr;
- height: 100%;
+ul li.active svg {
+  fill: var(--text__title);
 }
-.task__mainBox__controls{
- justify-content: space-between;
- width: 100%;
- border-bottom: 2px solid var(--item__bg2);
- align-items: center;
+ul li.active::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #d7d7d7;
 }
-.task__mainBox__controls ul{
- list-style: none;
- display: flex;
+.task__mainBox__Board {
+  --gap: 1rem;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  padding: 10px 0;
 }
-.task__mainBox__controls ul li{
-display: flex;
- padding: 10px 15px 10px 15px ;
- font-weight: 400;
- position: relative;
-}
-.task__mainBox__controls ul li svg {
- margin-right: 5px;
- fill :var(--item__bg2);
-}
-.view--controls ul li{
- padding-bottom: 15px;
-}
-.view--controls ul li.active {
- color: var(--text__title);
- position: relative;
-}
-.view--controls ul li.active svg {
- fill: var(--text__title);
-}
-.view--controls ul li.active::before{
- content: '';
- position: absolute;
- bottom: -2px;
- left: 0;
- width: 100%;
- height: 2px;
- background: #d7d7d7;
-}
-.view--settings{
- margin-bottom: 10px;
-}
-.task__mainBox__Board{
- --gap:1rem;
- width:100%;
- overflow: auto;
- height: 100%;
- padding: 10px 0;
-}
-.task__mainBox__Board.list-view{
-    display: grid;
+.task__mainBox__Board.list-view {
+  display: grid;
 }
 .task__mainBox__Board.list-view .boardBox {
-    overflow: initial;
+  overflow: initial;
 }
-.task__mainBox__Board.board-view{
-    overflow: auto;
-    display: flex;
+.task__mainBox__Board.board-view {
+  overflow: auto;
+  display: flex;
 }
-.boardBox{
- flex: 1;
- height: 100%;
- border-radius: 6px;
- background: var(--task__board__bg);
- padding: 10px;
- overflow: auto;
- display: flex;
- flex-direction: column;
- backdrop-filter: blur(15px);
+.boardBox {
+  flex: 1;
+  height: 100%;
+  border-radius: 6px;
+  background: var(--task__board__bg);
+  padding: 10px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(15px);
 }
-.boardBox__header{
- justify-content: space-between;
- align-items: center;
- color: #7a8195;
- padding-bottom: 10px;
+.boardBox__header {
+  justify-content: space-between;
+  align-items: center;
+  color: #7a8195;
+  padding-bottom: 10px;
 }
-.boardBox__header div{
- align-items: center;
- --gap:0;
- color: var(--highlight__text);
- font-size: 15px;
+.boardBox__header div {
+  align-items: center;
+  --gap: 0;
+  color: var(--highlight__text);
+  font-size: 15px;
 }
-.boardBox__box{
- flex-direction: column;
- --gap:0.8rem;
- height: 100%;
- 
+.boardBox__box {
+  flex-direction: column;
+  --gap: 0.8rem;
+  height: 100%;
 }
 .boardBox__main {
-    display: grid;
-    row-gap: 0.8rem;
-    padding-bottom: 40px;
+  display: grid;
+  row-gap: 0.8rem;
+  padding-bottom: 40px;
 }
-.dragArea{
- border-radius: 6px;
- border: 2px dashed #7a8195;
- width: 100%;
- display: grid;
- height: auto;
- min-height: 140px;
- color: #7a8195;
- place-items: center;
+.dragArea {
+  border-radius: 6px;
+  border: 2px dashed #7a8195;
+  width: 100%;
+  display: grid;
+  height: auto;
+  min-height: 140px;
+  color: #7a8195;
+  place-items: center;
 }
 .board-view {
-    display: grid;
-    gap: 0.8rem;
-    overflow: auto;
+  display: grid;
+  gap: 0.8rem;
+  overflow: auto;
 }
 .list-view {
-    display: flex;
-    gap: 0.8rem;
-    overflow: auto;
+  display: flex;
+  gap: 0.8rem;
+  overflow: auto;
 }
 
 .drag-icon-area {
-    position: absolute;
-    right: 10px;
-    padding: 10px;
-    cursor: grab;
-    padding-right: 0;
+  position: absolute;
+  right: 10px;
+  padding: 10px;
+  cursor: grab;
+  padding-right: 0;
 }
-.list-view .boardBox__box{
-    flex-direction: row;
-    padding-bottom: 10px;
+.list-view .boardBox__box {
+  flex-direction: row;
+  padding-bottom: 10px;
 }
 .list-view .boardBox__box .TaskCard {
-    min-width: 250px;
+  min-width: 250px;
 }
 .list-view .dragArea {
-    min-width: 250px;
-    margin-bottom: 10px;
+  min-width: 250px;
+  margin-bottom: 10px;
 }
